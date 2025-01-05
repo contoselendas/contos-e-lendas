@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contos e Lendas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .header {
+            background-color: #4B0082;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .logo img, .header .project-logo img {
+            max-height: 50px;
+        }
+        .header .project-logo {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .header .project-logo img {
+            max-height: 60px;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 40px;
+        }
+        .city-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #f0e68c;
+            margin-bottom: 40px;
+        }
+        .stories-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .story {
+            margin: 20px;
+            text-align: center;
+            max-width: 250px;
+        }
+        .story img {
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+        .story img:hover {
+            transform: translateX(10px);
+        }
+        .story a {
+            color: #f0e68c;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        .story a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="logoif.jpg" alt="Logo IFSC">
+        </div>
+        <div class="project-logo">
+            <img src="logo roxa.png" alt="Logo do Projeto" width="200">
+        </div>
+        <div>
+            <a href="p1.html">Início</a>
+        </div>
+    </div>
+
+
+    <div class="content">
+
+        <h2 class="city-title">Histórias de Garopaba</h2>
+        
+        <div class="stories-grid">
+            <div class="story">
+                <img src="logo roxa.png" alt="capa da mulher de branco">
+                <a href="mulher_de_branco_garopaba.html">A Mulher de Branco</a>
+            </div>
+            <div class="story">
+                <img src="pedrabranca.jpeg" alt="Capa da pedra branca">
+                <a href="pedra_branca_garopaba.html">A lenda da Pedra Branca</a>
+            </div>
+            <div class="story">
+                <img src="dunas.roncador.jpeg" alt="Capa do roncador">
+                <a href="roncador_garopaba.html">O Monstro Roncador</a>
+            </div>
+            <div class="story">
+                <img src="logo roxa.png" alt="Capa do caneludo">
+                <a href="caneludo_garopaba.html">O Caneludo do Casqueiro
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 IFSC Garopaba</p>
+    </div>
+
+</body>
+</html>

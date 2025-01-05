@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contos e Lendas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .header {
+            background-color: #9370DB; /* Faixa roxa clara */
+            padding: 5px; /* Redução da altura */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            max-height: 50px; /* Tamanho da logo do IFSC */
+        }
+        .header .nav-links {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .title-section {
+            background-color: #4B0082; /* Faixa roxa escura */
+            padding: 40px 20px; /* Faixa maior */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 200px; /* Espaçamento maior entre logo e título */
+        }
+        .title-section .project-logo img {
+            max-height: 140px; 
+        }
+        .title-section h1 {
+            font-size: 28px;
+            color: #fff;
+            font-family: 'Georgia', serif; /* Fonte estilizada */
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text-and-map {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .text-container {
+            max-width: 400px;
+        }
+        .text-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .text-container p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .map-container {
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+        }
+        .map-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .pin {
+            position: absolute;
+            width: 40px; /* Tamanho do pino */
+            height: 40px; /* Tamanho do pino */
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .text-and-map {
+                flex-direction: column;
+                align-items: center;
+            }
+            .header .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .title-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="logoif.jpg" alt="Logo IFSC">
+        </div>
+        <div class="nav-links">
+            <a href="p1.html">Inicio</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="projeto.html">Projeto</a>
+            <a href="referencias.html">Referências</a>
+            <a href="curtas.html">Curtametragens</a>
+        </div>
+    </div>
+
+    <div class="title-section">
+        <div class="project-logo">
+            <img src="logo roxa.png" alt="Logo do Projeto">
+        </div>
+        <h1>
+            Lendas, contos e causos<br>
+            como marcas identitárias<br>
+            do Sul de Santa Catarina
+        </h1>
+    </div>
+
+    <div class="main-content">
+        <div class="text-and-map">
+            <div class="text-container">
+                <h2>Explore as Narrativas</h2>
+                <p>O projeto tem como propósito investigar as narrativas folclóricas que compõem a cultura local, mais especificamente, do Sul de Santa Catarina. Por meio do estudo do gênero literário lenda, conto e causos, buscou-se sistematizar as histórias que se caracterizam como patrimônio cultural. 
+                    Como delimitação metodológica, a pesquisa, de cunho bibliográfico, buscou observar, analisar e difundir as narrativas da cidade de Garopaba e municípios vizinhos, mostrando sua importância para a história e cultura local e de que forma elas contribuem para a preservação da identidade e memória de uma população. 
+                    Nesta primeira versão, o estudo compilou narrativas dos municípios de Garopaba, Paulo Lopes e Imbituba. Clique no mapa e conheça um pouco dessas histórias fascinantes. Boa leitura!</p>
+            </div>
+            <div class="map-container">
+                <img src="MAPAROXO3.jpg" alt="Mapa">
+                <a href="paulo_lopes.html">
+                    <img src="PIN.PNG.png" class="pin" style="top: 65%; left: 80%;" alt="Pin 1">
+                </a>
+                <a href="imbitiba.html">
+                    <img src="PIN.PNG.png" class="pin" style="top: 55%; left: 70%;" alt="Pin 2">
+                </a>
+                <a href="garopaba.html">
+                    <img src="PIN.PNG.png" class="pin" style="top: 75%; left: 70%;" alt="Pin 3">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 IFSC Garopaba</p>
+    </div>
+
+</body>
+</html>

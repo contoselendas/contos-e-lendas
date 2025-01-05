@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contos e Lendas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .header {
+            background-color: #4B0082;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .logo img, .header .project-logo img {
+            max-height: 50px;
+        }
+        .header .project-logo {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .header .project-logo img {
+            max-height: 60px;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 40px;
+        }
+        .city-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #f0e68c;
+            margin-bottom: 40px;
+        }
+        .stories-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .story {
+            margin: 20px;
+            text-align: center;
+            max-width: 250px;
+        }
+        .story img {
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+        .story img:hover {
+            transform: translateX(10px);
+        }
+        .story a {
+            color: #f0e68c;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        .story a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="logoif.jpg" alt="Logo IFSC">
+        </div>
+        <div class="project-logo">
+            <img src="logo roxa.png" alt="Logo do Projeto" width="200">
+        </div>
+        <div>
+            <a href="p1.html">Início</a>
+        </div>
+    </div>
+
+    <div class="content">
+        
+        <h2 class="city-title">Histórias de Imbituba</h2>
+        
+        <div class="stories-grid">
+            <div class="story">
+                <img src="logo roxa.png" alt="Capa do baile de Quaresma">
+                <a href="baile_de_Quaresma_imbituba.html">O demônio no baile de Quaresma</a>
+            </div>
+            <div class="story">
+                <img src="O último casamento no hotel de Itapirubá.jpg" alt="Capa do hotel de itapirubá">
+                <a href="hotel_itapirubá_imbituba.html">O último casamento no Hotel de Itapirubá</a>
+            </div>
+            <div class="story">
+                <img src="cabeleira_capa.JPG" alt="Capa cabeleira">
+                <a href="cabeleira_imbituba.html">A lenda do cabeleira</a>
+            </div>
+            <div class="story">
+                <img src="O papo-roxo.png" alt="Capa do Papo-Roxo">
+                <a href="papo_roxo_imbituba.html">lenda do papo-roxo</a>
+            </div>
+            <div class="story">
+                <img src="logo roxa.png" alt="Capa do sotão">
+                <a href="sotao_imbituba.html">O sotão</a>
+            </div>
+            <div class="story">
+                <img src="logo roxa.png" alt="Capa da coisa de fogo">
+                <a href="coisa_de_fogo_imbituba.html">A Coisa de Fogo</a>
+            </div>
+            <div class="story">
+                <img src="A mulher que chora.png" alt="Capa da mulher que chora">
+                <a href="mulher_chora_imbituba.html">A mulher que chora</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 IFSC Garopaba</p>
+    </div>
+
+</body>
+</html>
