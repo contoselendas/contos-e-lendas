@@ -12,10 +12,9 @@
             background-color: #333;
             color: #fff;
         }
-        /* Faixa roxa clara */
         .header {
             background-color: #9370DB;
-            padding: 2px 10px; /* Diminuído o padding para uma faixa menor */
+            padding: 2px 10px; 
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -33,8 +32,6 @@
             font-size: 16px;
             font-weight: bold;
         }
-
-        /* Faixa roxa escura com o título */
         .title-section {
             background-color: #4B0082;
             padding: 30px 20px;
@@ -49,11 +46,10 @@
         .title-section h1 {
             font-size: 28px;
             color: #fff;
-            font-family: 'Georgia', serif; /* Fonte estilizada */
+            font-family: 'Georgia', serif;
             margin: 0;
             line-height: 1.5;
         }
-
         .content {
             display: flex;
             flex-direction: column;
@@ -66,13 +62,31 @@
             margin-bottom: 20px;
             color: #f0e68c;
         }
-        .content p {
-            max-width: 700px;
-            margin-bottom: 40px;
-            font-size: 1.2rem;
-            line-height: 1.6;
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 900px;
         }
-
+        .story {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .story img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .story a {
+            margin-top: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+        }
         .footer {
             background-color: #222;
             text-align: center;
@@ -82,8 +96,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Faixa roxa clara com logo IF e navegação -->
     <div class="header">
         <div class="logo">
             <img src="logoif.jpg" alt="Logo IFSC">
@@ -96,8 +108,6 @@
             <a href="referencias.html">Referencias</a>
         </div>
     </div>
-
-    <!-- Faixa roxa escura com a logo roxa.jpg e título -->
     <div class="title-section">
         <div class="logo">
             <img src="logo roxa.png" alt="Logo Roxa">
@@ -108,79 +118,25 @@
             do Sul de Santa Catarina
         </h1>
     </div>
-
     <div class="content">
-        
         <h2 class="city-title">Curtas-metragens</h2>
-        
         <div class="stories-grid">
-            <div class="story">
-                <img src="logo roxa.png" alt="Capa do baile de Quaresma">
-                <a href="link do baile da quaresma">O demônio no baile de Quaresma</a>
-            </div>
-            <div class="story">
-                <img src="O último casamento no hotel de Itapirubá.jpg" alt="Capa do hotel de itapirubá">
-                <a href="links do casamento no hotel de itapiruba">O último casamento no Hotel de Itapirubá</a>
-            </div>
-            <div class="story">
-                <img src="cabeleira_capa.JPG" alt="Capa cabeleira">
-                <a href="link da cabeleira">A lenda do cabeleira</a>
-            </div>
-            <div class="story">
-                <img src="O papo-roxo.png" alt="Capa do Papo-Roxo">
-                <a href="link papo roxo">lenda do papo-roxo</a>
-            </div>
-            <div class="story">
-                <img src="o sotao.jpeg" alt="Capa do sotão">
-                <a href=" link o sotao imbituba">O sotão</a>
-            </div>
-            <div class="story">
-                <img src="coisa de fogo.jpeg" alt="Capa da coisa de fogo">
-                <a href="link coisa_de_fogo_imbituba ">A Coisa de Fogo</a>
-            </div>
-            <div class="story">
-                <img src="A mulher que chora.png" alt="Capa da mulher que chora">
-                <a href="link mulher_chora_imbituba">A mulher que chora</a>
-            </div>
-            <div class="story">
-                <img src="logo roxa.png" alt="capa da mulher de branco">
-                <a href=" link mulher_de_branco_garopaba">A Mulher de Branco</a>
-            </div>
-            <div class="story">
-                <img src="pedrabranca.jpeg" alt="Capa da pedra branca">
-                <a href=" link pedra_branca_garopaba">A lenda da Pedra Branca</a>
-            </div>
-            <div class="story">
-                <img src="dunas.roncador.jpeg" alt="Capa do roncador">
-                <a href="link roncador_garopaba">O Monstro Roncador</a>
-            </div>
-            <div class="story">
-                <img src="logo roxa.png" alt="Capa do caneludo">
-                <a href="link caneludo_garopaba">O Caneludo do Casqueiro
-                </a>
-            </div>
-            <div class="story">
-                <img src="Lobisomem de Paulo Lopes.png" alt="Capa lobisomem ">
-                <a href="link lobisomem_paulo_lopes">Lobisomem de paulo Lopes</a>
-            </div>
-            <div class="story">
-                <img src="o milho roubado.png" alt="Capa o milho roubado">
-                <a href="link milho_roubado_paulo_lopes">O milho roubado </a>
-            </div>
-            <div class="story">
-                <img src="olho gordo.png" alt="Capa do olho gordo">
-                <a href="link olho_gordo_paulo_lopes">O Olho Gordo</a>
-            </div>
-            <div class="story">
-                <img src="As gemeas de Paulo Lopes (1).png" alt="capa das gemeas">
-                <a href=" link gemeas_paulo_lopes">As Gêmeas de Paulo Lopes</a>
-            </div>
+            <div class="story"><img src="logo roxa.png" alt="Capa"><a href="#">O demônio no baile de Quaresma</a></div>
+            <div class="story"><img src="O último casamento no hotel de Itapirubá.jpg" alt="Capa"><a href="#">O último casamento no Hotel de Itapirubá</a></div>
+            <div class="story"><img src="cabeleira_capa.JPG" alt="Capa"><a href="#">A lenda do cabeleira</a></div>
+            <div class="story"><img src="O papo-roxo.png" alt="Capa"><a href="#">Lenda do papo-roxo</a></div>
+            <div class="story"><img src="o sotao.jpeg" alt="Capa"><a href="#">O sotão</a></div>
+            <div class="story"><img src="coisa de fogo.jpeg" alt="Capa"><a href="#">A Coisa de Fogo</a></div>
+            <div class="story"><img src="A mulher que chora.png" alt="Capa"><a href="#">A mulher que chora</a></div>
+            <div class="story"><img src="logo roxa.png" alt="Capa"><a href="#">A Mulher de Branco</a></div>
+            <div class="story"><img src="pedrabranca.jpeg" alt="Capa"><a href="#">A lenda da Pedra Branca</a></div>
+            <div class="story"><img src="dunas.roncador.jpeg" alt="Capa"><a href="#">O Monstro Roncador</a></div>
+            <div class="story"><img src="logo roxa.png" alt="Capa"><a href="#">O Caneludo do Casqueiro</a></div>
+            <div class="story"><img src="Lobisomem de Paulo Lopes.png" alt="Capa"><a href="#">Lobisomem de Paulo Lopes</a></div>
         </div>
     </div>
-
     <div class="footer">
         <p>&copy; 2024 IFSC Garopaba</p>
     </div>
-
 </body>
 </html>
